@@ -12,3 +12,14 @@ FROM users;
 # ORDER BY
 SELECT * FROM users
 ORDER BY id ASC;
+
+# FUNCTIONS
+# https://www.w3schools.com/sql/sql_ref_mysql.asp
+SELECT ABS(7) AS 'Operation'
+FROM users;
+
+SELECT CEIL(7.32) AS 'Operation'
+FROM users;
+
+SELECT FLOOR(7.32) AS 'Operation'
+FROM users;

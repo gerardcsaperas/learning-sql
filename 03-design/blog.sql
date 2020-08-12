@@ -22,7 +22,7 @@ CREATE TABLE posts(
     CategoryID int(255) NOT NULL,
     PostTitle varchar(255) NOT NULL,
     PostDesc MEDIUMTEXT,
-    PostDate date NOT NULL,
+    PostDate date NOT NULL DEFAULT CURRDATE,
     FOREIGN KEY (UserID) REFERENCES users(ID),
-    FOREIGN KEY (CategoryID) REFERENCES categories(ID),
+    FOREIGN KEY (CategoryID) REFERENCES categories(ID)
 )ENGINE=InnoDB;
