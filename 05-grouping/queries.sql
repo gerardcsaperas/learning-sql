@@ -1,1 +1,10 @@
+# GROUPED QUERIES
+SELECT COUNT(PostTitle) AS NumberOfPosts, CategoryID
+FROM posts
+GROUP BY CategoryID;
 
+# HAVING IS LIKE A 'WHERE' FOR AGGREGATE FUNCTIONS
+SELECT COUNT(PostTitle) AS NumberOfPosts, CategoryID
+FROM posts
+GROUP BY CategoryID
+HAVING COUNT(PostTitle) >= 3;
